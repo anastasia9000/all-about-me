@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+font:bold;
+
+}
+
+
+
+
+.container{
+    flex-direction: column;
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap:wrap ;
+    align-content: space-between;
+    justify-content: center;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 15%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+ h2{
+    display: flex; 
+    justify-content: center;
+    align-content: stretch;
+    font-size: 40px;
+ }
+
+ .name{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+ }
+
+ .right{
+   display: flex;
+   justify-content: center;
+    
+ }
+ .left{
+   text-align: center;
+   font-size: 20px ;
+   font
+     
+     
+ }
+ .profile img{
+   border-radius: 90%;
+ 
+ }
+
+ .profile{
+   display: flex;
+   justify-content: center;
+
+ }
+
+ .info{
+   display: flex;
+   justify-content: center;
+
+ }
